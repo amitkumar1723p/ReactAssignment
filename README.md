@@ -1,4 +1,4 @@
-React Asignment (Assignment) Hi! My name is Amitkumar  
+React Asignment  
 Install Dependencies npm install
  
 
