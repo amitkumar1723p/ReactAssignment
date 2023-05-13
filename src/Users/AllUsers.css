@@ -1,0 +1,196 @@
+.UserCardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px;
+}
+
+.UserCard {
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 1.2em;
+    background: #04040412;
+    overflow-wrap: anywhere;
+    border-radius: 26px;
+    box-shadow: 0px 0px 10px black;
+    width: 350px;
+    margin: 20px;
+    text-align: center;
+
+
+}
+
+.UserCard>img {
+    width: 70px;
+    border-radius: 100%;
+    background: white;
+    box-shadow: 0px 0px 3px 0px #df2c2c;
+}
+
+.paginationBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.paginationBox>button,
+.pageNumber {
+    cursor: pointer;
+    font-weight: bold;
+    border: navajowhite;
+    background: #ff6868;
+    padding: 6px 11px;
+    margin: 0 7px;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: all .10s linear;
+
+}
+
+.pageNumber {
+    background-color: #7c1c1c57;
+    color: #0415b7;
+}
+
+.paginationBox>button:hover {
+    background: #e61919;
+}
+
+.paginationBox>button:active {
+    color: white;
+}
+
+.small_heading {
+    font-weight: bolder;
+}
+
+.fillterbar {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.searchInput {
+    width: 34%;
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 7px;
+}
+
+.MainHeading,
+.Messagebox {
+    text-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+.Messagebox {
+    font-weight: bold;
+}
+
+.fillterbar>div>div>select {
+    cursor: pointer;
+    /* width: 34%; */
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 7px;
+    border: none;
+
+}
+
+.fillterbar>div>div>select:nth-child(2) {
+    margin: 0 3px;
+}
+
+.fillterbar>div {
+    text-align: center;
+}
+
+.fillterbar>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+}
+
+.clearFilterButton {
+    text-align: center;
+    margin-top: 10px;
+    padding: 7px 11px;
+    font-weight: bold;
+    color: white;
+    background: blue;
+    border: none;
+}
+
+.clearFilterButton:active {
+    cursor: pointer;
+    color: red;
+
+}
+
+#root {
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width:0px) and (max-width:900px) {
+    .fillterbar {
+        flex-direction: column;
+
+    }
+
+    .searchInput {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:550px) {
+    .searchInput::placeholder {
+        font-size: .9em;
+
+        font-weight: bold;
+    }
+
+    .fillterbar>div>div {
+        flex-direction: column;
+    }
+
+    .fillterbar>div>div>select:nth-child(2) {
+        margin: 10px;
+
+    }
+
+    .fillterbar>div>div>select {
+        width: 100%;
+    }
+
+    .searchInput {
+        width: 98%;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    .UserCardContainer {
+        flex-direction: column;
+        font-size: 13px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .UserCard {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .MainHeading,
+    .Messagebox {
+        font-size: 1.9em;
+    }
+
+}
